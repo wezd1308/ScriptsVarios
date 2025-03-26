@@ -1,0 +1,1 @@
+﻿Get-PSDrive | Where-Object {$_.Provider -like "Microsoft.PowerShell.Core\FileSystem"} | Format-Table Name, @{Name="Free(GB)";Expression={[math]::round($_.Free / 1GB, 2)}}, @{Name="Total(GB)";Expression={[math]::round($_.Used + $_.Free / 1GB, 2)}}

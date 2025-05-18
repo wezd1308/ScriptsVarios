@@ -12,7 +12,7 @@ $NIC= Get-NetAdapter
 $NICName= $NIC.Name
 
 #Cambiamos el nombre de equipo con el hostname que esta almacenado en la variable $hostname
-Rename-Computer -NewName $hostname
+Rename-Computer -NewName $hostname -force
 
 #Removemos la coifguracion ip que exista previamente
 Remove-NetIPAddress -InterfaceAlias $NICName -AddressFamily IPv4 -Confirm:$false

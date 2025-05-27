@@ -1,5 +1,5 @@
 ﻿# Nombre del servidor remoto
-$server = "cpdwprocesosuif"
+$server = "server"
 
 # Intervalo de actualización en segundos
 $interval = 5

@@ -1,4 +1,5 @@
 #!/bin/bash
+# Script para respaldar archivos
 # Directorios a respaldar
 SRC="/home/wzambrano"
 DEST="/backups/$(date +%F)"
